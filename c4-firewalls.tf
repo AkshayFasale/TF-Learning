@@ -1,7 +1,8 @@
 # Resouce : firewall Rule : SSH
 
 resource "google_compute_firewall" "fw_ssh" {
-  name = "firewall-rule-allow-ssh22"
+  project = "terraform-practice-436907"
+  name    = "firewall-rule-allow-ssh22"
   allow {
     ports    = ["22"]
     protocol = "tcp"
@@ -15,7 +16,8 @@ resource "google_compute_firewall" "fw_ssh" {
 
 #resource for firewall rule 
 resource "google_compute_firewall" "fw-http" {
-  name = "firewall-rule-allow-http80"
+  project = "terraform-practice-436907"
+  name    = "firewall-rule-allow-http80"
   allow {
     ports    = ["80"]
     protocol = "tcp"
