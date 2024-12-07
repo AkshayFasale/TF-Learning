@@ -15,7 +15,7 @@ terraform {
 provider "google" {
   # Configuration options
   project = "terraform-practice-436907"
-  region  = "us-central1"
+  region  = var.gcp-region
   alias   = "dev"
 }
 
